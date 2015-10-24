@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{12e413f2-7704-4ccd-a76f-6a5b1996e31e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{998dcbd3-4c96-4879-ac2f-a9c1653ffbde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{691ab69c-735a-4767-ab3b-3814c1ffa1e9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\random_testset_factory.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\random_testvector_factory.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="test\random_testvector_factory_test.cpp">
+      <Filter>test</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\random_testset_factory.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="test\random_testset_factory_test.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="src\random_testvector_factory.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
