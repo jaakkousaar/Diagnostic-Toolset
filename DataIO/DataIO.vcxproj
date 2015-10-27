@@ -81,11 +81,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="include\file_manager.h" />
+    <ClInclude Include="include\file_manager_winapi.h" />
     <ClInclude Include="include\file_reader.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\file_manager.cpp" />
+    <ClCompile Include="src\file_manager_winapi.cpp" />
     <ClCompile Include="src\file_reader.cpp" />
     <ClCompile Include="test\file_manager_test.cpp" />
     <ClCompile Include="test\file_reader_test.cpp" />

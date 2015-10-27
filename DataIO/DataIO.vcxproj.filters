@@ -15,7 +15,7 @@
     <ClInclude Include="include\file_reader.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="include\file_manager.h">
+    <ClInclude Include="include\file_manager_winapi.h">
       <Filter>include</Filter>
     </ClInclude>
   </ItemGroup>
@@ -26,11 +26,11 @@
     <ClCompile Include="src\file_reader.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\file_manager.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="test\file_manager_test.cpp">
       <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="src\file_manager_winapi.cpp">
+      <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
