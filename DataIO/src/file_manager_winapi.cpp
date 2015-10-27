@@ -16,7 +16,8 @@ const unsigned long FileManagerWinAPI::ConvertAccessModeSpecifier(const char mod
     case 'w':
       return GENERIC_WRITE;
     case 'a':
-    default:
       return GENERIC_ALL;  
+    default:
+      return 0;
   }
 }

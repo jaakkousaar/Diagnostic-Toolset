@@ -18,7 +18,7 @@ public:
 		);
 
 private:
-	static unsigned CreateRandomBit();
+  static const unsigned long CreateRandomBit();
 
 
 

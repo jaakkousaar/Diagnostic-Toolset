@@ -23,7 +23,7 @@ unique_ptr< vector< unsigned > > RandomTestVectorFactory::CreateVector
 	return testvector_ptr;
 }
 
-unsigned RandomTestVectorFactory::CreateRandomBit()
+const unsigned long RandomTestVectorFactory::CreateRandomBit()
 {
 	srand(time(NULL));
 	return rand() % 2;
