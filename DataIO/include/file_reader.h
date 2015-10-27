@@ -1,4 +1,4 @@
-// file_reader.cpp : header file
+// file_reader.h : header file
 // Created by Jaak Kõusaar @07.2015
 
 #ifndef DATAIO_FILEREADER_H_

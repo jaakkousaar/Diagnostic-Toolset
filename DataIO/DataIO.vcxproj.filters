@@ -15,6 +15,9 @@
     <ClInclude Include="include\file_reader.h">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="include\file_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test\file_reader_test.cpp">
@@ -22,6 +25,12 @@
     </ClCompile>
     <ClCompile Include="src\file_reader.cpp">
       <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\file_manager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="test\file_manager_test.cpp">
+      <Filter>test</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
