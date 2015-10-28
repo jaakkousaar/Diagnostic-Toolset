@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.40418.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DataIO", "DataIO\DataIO.vcxproj", "{FA91112D-A6A1-4DD0-9B9D-E1A621ACB101}"
 EndProject
@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libs", "libs", "{36B6FC4D-0
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Generators", "Generators\Generators.vcxproj", "{4CAF577C-F0D5-4055-BC4B-507F3A1631C1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MainApplication", "MainApplication\MainApplication.vcxproj", "{40CA7DED-3551-4389-9FBC-806D0A4FD9B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{4CAF577C-F0D5-4055-BC4B-507F3A1631C1}.Debug|Win32.Build.0 = Debug|Win32
 		{4CAF577C-F0D5-4055-BC4B-507F3A1631C1}.Release|Win32.ActiveCfg = Release|Win32
 		{4CAF577C-F0D5-4055-BC4B-507F3A1631C1}.Release|Win32.Build.0 = Release|Win32
+		{40CA7DED-3551-4389-9FBC-806D0A4FD9B6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{40CA7DED-3551-4389-9FBC-806D0A4FD9B6}.Debug|Win32.Build.0 = Debug|Win32
+		{40CA7DED-3551-4389-9FBC-806D0A4FD9B6}.Release|Win32.ActiveCfg = Release|Win32
+		{40CA7DED-3551-4389-9FBC-806D0A4FD9B6}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

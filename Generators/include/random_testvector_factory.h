@@ -11,14 +11,14 @@ class RandomTestVectorFactory
 {
 
 public:
-	static std::unique_ptr< std::vector< unsigned > > CreateVector
+	static std::unique_ptr< std::vector< char > > CreateVector
 		(
 		unsigned first_fragment,
 		unsigned second_fragment
 		);
 
 private:
-  static const unsigned long CreateRandomBit();
+  static const char CreateRandomBit();
 
 
 

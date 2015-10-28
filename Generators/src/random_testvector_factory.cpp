@@ -8,23 +8,23 @@ using std::unique_ptr;
 using std::make_unique;
 using std::vector;
 
-unique_ptr< vector< unsigned > > RandomTestVectorFactory::CreateVector
+unique_ptr< vector< char > > RandomTestVectorFactory::CreateVector
 	(
 	unsigned first_fragment,
 	unsigned second_fragment
 	)
 {
 	auto vector_length = first_fragment + second_fragment;
-	auto testvector_ptr =  make_unique< vector< unsigned > >(vector_length, 0);
+	auto testvector_ptr =  make_unique< vector< char > >(vector_length, 0);
 
-	for (unsigned i = 0; i < vector_length; ++i)
+	for (int i = 0; i < vector_length; ++i)
 		testvector_ptr->emplace_back(CreateRandomBit());
 
 	return testvector_ptr;
 }
 
-const unsigned long RandomTestVectorFactory::CreateRandomBit()
+const char RandomTestVectorFactory::CreateRandomBit()
 {
 	srand(time(NULL));
-	return rand() % 2;
+	return ( rand() % 2 ) + '0';
 }

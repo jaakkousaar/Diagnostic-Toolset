@@ -11,7 +11,7 @@ class RandomTestSetFactory
 {
 
 public:
-	static std::unique_ptr< const std::vector< std::vector< unsigned > > > CreateSet
+	static std::unique_ptr< const std::vector< std::vector< char > > > CreateSet
 		(
 		unsigned vector_count,
 		unsigned first_fragment,
