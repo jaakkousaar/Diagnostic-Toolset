@@ -7,9 +7,9 @@ using namespace dataio;
 #include <string>
 using std::string;
 
-const unsigned long FileManagerWinAPI::ConvertAccessModeSpecifier(const char mode) const
+const unsigned long FileManagerWinAPI::ConvertAccessModeSpecifier() const
 {
-  switch (mode)
+  switch (access_mode)
   {
     case 'r':
       return GENERIC_READ;
