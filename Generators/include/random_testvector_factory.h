@@ -18,6 +18,8 @@ public:
 		);
 
 private:
+  static const unsigned END_OF_LINE = 1;
+
   static const char CreateRandomBit();
 
 
