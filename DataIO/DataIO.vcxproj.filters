@@ -20,16 +20,13 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="test\file_reader_test.cpp">
-      <Filter>test</Filter>
-    </ClCompile>
     <ClCompile Include="src\file_reader.cpp">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\file_manager_winapi.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="test\file_manager_winapi_test.cpp">
+    <ClCompile Include="test\file_reader_test.cpp">
       <Filter>test</Filter>
     </ClCompile>
   </ItemGroup>

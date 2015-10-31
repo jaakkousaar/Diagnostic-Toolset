@@ -18,14 +18,15 @@ unique_ptr< vector< char > > RandomTestVectorFactory::CreateVector
 	auto testvector_ptr =  make_unique< vector< char > >(vector_length, 0);
 
 	for (int i = 0; i < vector_length; ++i)
-		testvector_ptr->emplace_back(CreateRandomBit());
+		testvector_ptr->emplace_back(RandomTestVectorFactory::CreateRandomBit());
 	testvector_ptr->emplace_back('\n');
 
-	return testvector_ptr;
+   
+	return move(testvector_ptr);
 }
 
-const char RandomTestVectorFactory::CreateRandomBit()
+char RandomTestVectorFactory::CreateRandomBit()
 {
 	srand(time(NULL));
-	return ( rand() % 2 ) + '0';
+	return char( rand() % 2 ) + '0';
 }

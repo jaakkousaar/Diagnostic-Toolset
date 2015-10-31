@@ -1,11 +1,12 @@
 #include <iostream>
 
+#include "../include/random_testvector_factory.h"
 #include "../../libs/gtest-1.7.0/include/gtest/gtest.h"
-#include "../include/random_testset_factory.h"
+
 
 using namespace generators;
 
-TEST(generators_test, RandomBitGeneratorTest)
+TEST(generators2_test, RandomBitGeneratorTest)
 {
 	//generators::RandomTestSetFactory<1,unsigned> rtsf( 4, 5 );
 	//for (auto i = 0; i < 10; ++i)

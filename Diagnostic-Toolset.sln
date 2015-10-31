@@ -14,6 +14,10 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Generators", "Generators\Generators.vcxproj", "{4CAF577C-F0D5-4055-BC4B-507F3A1631C1}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MainApplication", "MainApplication\MainApplication.vcxproj", "{40CA7DED-3551-4389-9FBC-806D0A4FD9B6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FA91112D-A6A1-4DD0-9B9D-E1A621ACB101} = {FA91112D-A6A1-4DD0-9B9D-E1A621ACB101}
+		{4CAF577C-F0D5-4055-BC4B-507F3A1631C1} = {4CAF577C-F0D5-4055-BC4B-507F3A1631C1}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

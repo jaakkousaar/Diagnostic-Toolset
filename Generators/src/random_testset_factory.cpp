@@ -8,8 +8,9 @@ using namespace generators;
 using std::vector;
 using std::make_unique;
 using std::move;
+using std::unique_ptr;
 
-static std::unique_ptr< const std::vector< std::vector< char > > > CreateSet
+unique_ptr< vector< vector< char > > > RandomTestSetFactory::CreateSet
 	(
 	unsigned vector_count,
 	unsigned first_fragment,
@@ -21,7 +22,7 @@ static std::unique_ptr< const std::vector< std::vector< char > > > CreateSet
 	for (int i = 0; i < vector_count; ++i)
 		testset_ptr->emplace_back(*RandomTestVectorFactory::CreateVector(first_fragment, second_fragment));
 
-	return move(testset_ptr);
+	return testset_ptr;
 };
 
 

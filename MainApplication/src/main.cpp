@@ -4,6 +4,7 @@
 #include "../include/precompiled.h"
 
 using namespace std;
+using namespace generators;
 
 //void DisplayError(LPTSTR lpszFunction);
 
@@ -28,9 +29,9 @@ void __cdecl _tmain(int argc, TCHAR *argv[])
 	HANDLE hFile;
 	const DWORD vector_count = 100;
 	const DWORD dwBytesToWrite = vector_count * 76;
-	auto testset = generators::RandomTestSetFactory::CreateSet(
+	auto testset ( generators::RandomTestSetFactory::CreateSet(
 		vector_count,
-		50, 25);
+		50, 25) );
 	char DataBuffer[dwBytesToWrite];
 
 	DWORD dwBytesWritten = 0;
@@ -38,7 +39,7 @@ void __cdecl _tmain(int argc, TCHAR *argv[])
 
 	for (int i = 0; i < 100; ++i)
 	{
-		std::copy(testset.get()->at(i).begin(), testset.get()->at(i).end(), DataBuffer);
+		//std::copy(testset.get()->at(i).begin(), testset.get()->at(i).end(), DataBuffer);
 	}
 
 	hFile = CreateFile(argv[1],                // name of the write
