@@ -18,19 +18,16 @@
     <ClInclude Include="include\random_testvector_factory.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="test\random_testvector_factory_test.cpp">
-      <Filter>test</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\random_testset_factory.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="test\random_testset_factory_test.cpp">
-      <Filter>test</Filter>
-    </ClCompile>
     <ClCompile Include="src\random_testvector_factory.cpp">
       <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="test\random_testset_factory_test.cpp">
+      <Filter>test</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

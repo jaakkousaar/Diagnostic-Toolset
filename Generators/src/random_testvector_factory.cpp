@@ -8,23 +8,25 @@ using std::unique_ptr;
 using std::make_unique;
 using std::vector;
 
-unique_ptr< vector< unsigned > > RandomTestVectorFactory::CreateVector
+unique_ptr< vector< char > > RandomTestVectorFactory::CreateVector
 	(
 	unsigned first_fragment,
 	unsigned second_fragment
 	)
 {
-	auto vector_length = first_fragment + second_fragment;
-	auto testvector_ptr =  make_unique< vector< unsigned > >(vector_length, 0);
+	auto vector_length = first_fragment + second_fragment + END_OF_LINE;
+	auto testvector_ptr =  make_unique< vector< char > >(vector_length, 0);
 
-	for (unsigned i = 0; i < vector_length; ++i)
-		testvector_ptr->emplace_back(CreateRandomBit());
+	for (int i = 0; i < vector_length; ++i)
+		testvector_ptr->emplace_back(RandomTestVectorFactory::CreateRandomBit());
+	testvector_ptr->emplace_back('\n');
 
-	return testvector_ptr;
+   
+	return move(testvector_ptr);
 }
 
-unsigned RandomTestVectorFactory::CreateRandomBit()
+char RandomTestVectorFactory::CreateRandomBit()
 {
 	srand(time(NULL));
-	return rand() % 2;
+	return char( rand() % 2 ) + '0';
 }

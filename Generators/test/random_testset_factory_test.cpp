@@ -4,12 +4,11 @@
 #include "../include/random_testset_factory.h"
 
 using namespace generators;
-//
-//TEST(Generators_test, TestFragmentCountWith3Fragments)
-//{
-//	generators::RandomTestSetFactory<unsigned> vtgt( 3, 4, 5 );
-//	EXPECT_EQ(3, vtgt.GetFragmentCount());
-//}
+
+TEST(Generators_test, TestFragmentCountWith3Fragments)
+{
+
+}
 
 int main(int argc, char** argv)
 {
